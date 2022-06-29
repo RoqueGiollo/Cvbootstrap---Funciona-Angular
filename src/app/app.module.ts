@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ExperienceComponent } from './experience/experience.component';
     EducationComponent,
     SkillsComponent,
     ExperienceComponent,
+    LoginComponent,
     ],
   imports: [
     BrowserModule,
