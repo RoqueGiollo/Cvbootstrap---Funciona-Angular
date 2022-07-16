@@ -4,12 +4,13 @@
         <div class="resume-section-content">
             <h2 class="mb-5">Login</h2>
             <div>
-                <form>
+                <!--prueba formgroup-->
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
                     <div class="subheading mb-2">
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" placeholder="Email" formControlName="usuario" >
                     </div>
                     <div class="subheading mb-2">
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" placeholder="Password" formControlName="password">
                     </div>
                     <div class="subheading mb-2">
                         <button type="submit" class="btn btn-primary">Login</button>

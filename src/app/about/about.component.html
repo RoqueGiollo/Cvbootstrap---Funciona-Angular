@@ -10,14 +10,17 @@
                     Calle Cordoba 62 · Unquillo · CP 5109 · (3543) 63-2997 ·
                     <a href="mailto:giolloroque@gmail.com">Contacto</a>
                 </div>
-                    <p class="lead mb-3">{{aboutText}}</p>
+                    <p class="lead mb-3">{{aboutText}}</p> <!--Interpolacion -->
+                
+               
+                             <!--Parte de edicion de texto-->    
                 <div class="subheading mb-1">
-                    <input type="text" #box >
-                        <!--box text/ usa un id  "box"-->
+                    <input type="email" class="form-control"  #boxID > 
+                                <!--boxtext/ usa un id  "box"-->
                 </div>    
                 <div class="subheading mb-5">
-                    <button (click)="getVal(box.value)" type="button" class="btn btn-primary">EDITAR ABOUT</button>
-                    <!--<button type="button" class="btn btn-primary">EDITAR TEXTO</button>-->
+                    <button (click)="valorBox(boxID.value)" type="button" class="btn btn-primary">EDITAR ABOUT</button>
+                    
                 </div>
                 
                 <div class="social-icons">
@@ -25,7 +28,6 @@
                     <a class="social-icon" href="https://github.com/RoqueGiollo"><i class="fab fa-github"></i></a>
                     <a class="social-icon" href="mailto:giolloroque@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
-
 
             </div>
         </section>
